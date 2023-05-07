@@ -129,7 +129,7 @@ def main():
         model = model.quantize(model_args.quantization_bit)
     if model_args.pre_seq_len is not None:
         # P-tuning v2
-        model = model.half()
+        model = model.half()  
         model.transformer.prefix_encoder.float()
     else:
         # Finetune
