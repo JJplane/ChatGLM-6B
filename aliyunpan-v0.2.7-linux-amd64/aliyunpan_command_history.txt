@@ -1,0 +1,11 @@
+aliyunpan login
+login
+ls
+download chatglm/
+download
+download --saveto /chatglm/
+download chatglm/
+download
+download -p 16 chatglm/
+download
+download -p 16 --saveto ../ chatglm/

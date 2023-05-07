@@ -43,8 +43,8 @@ with open('dataset.json', 'w') as file:
 # 划分训练集和测试集1:99
 import random
 random.shuffle(dataset)
-trainset = dataset[:int(len(dataset) * 0.01)]
-testset = dataset[int(len(dataset) * 0.01):]
+testset = dataset[:int(len(dataset) * 0.01)]
+trainset = dataset[int(len(dataset) * 0.01):]
 # 保存训练集和测试集
 with open('train.json', 'w') as file:
     json.dump(trainset, file, ensure_ascii=False, indent=4)

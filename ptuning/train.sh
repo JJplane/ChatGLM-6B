@@ -1,7 +1,7 @@
 PRE_SEQ_LEN=128
 LR=2e-2
 
-CUDA_VISIBLE_DEVICES=0 python3 main.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python3 main.py \
     --do_train \
     --train_file myData/train.json \
     --validation_file myData/dev.json \
@@ -22,5 +22,5 @@ CUDA_VISIBLE_DEVICES=0 python3 main.py \
     --save_steps 1000 \
     --learning_rate $LR \
     --pre_seq_len $PRE_SEQ_LEN \
-    --quantization_bit 8
+    --quantization_bit 4
 
